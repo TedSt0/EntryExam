@@ -5,12 +5,18 @@ A website for applying to a college's entrance exams, build with HTML, CSS, Java
 # Used programing languages
 HTML and CSS for page formating.
 
+
 PHP for connecting to the database, and creating sql queries
 
+
 JavaScript for varrious things such as: 
+
 the Home Page image slider;
+
 Enabling and disabling the "Save" and "Delete" admin buttons if there's no selected data to edit ot delete;
+
 Loading the exams in the apply form after the applicant has choosen a major to stop applicants from choosing an exam before choosing a major;
+
 Showing and hiding the Login Window overlay,
 
 
