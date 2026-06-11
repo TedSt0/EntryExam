@@ -1,0 +1,169 @@
+table {
+    width: 90%;
+    margin: 3rem auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+table th {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: ivory;
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+}
+
+table th:nth-child(n+1):not(:last-child) {
+    border-right: 3px solid rgba(255, 255, 255, 0.15);
+}
+
+table td {
+    padding: 0.5rem;
+    color: ivory;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.05);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+table td:nth-child(n+1):not(:last-child) {
+    border-right: 3px solid rgba(255, 255, 255, 0.05);
+}
+
+.editData{
+    width: 95%;
+    padding: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: transparent;
+    color: ivory;
+}
+
+select.editData {
+    cursor: pointer;
+    text-overflow: ellipsis;
+}
+
+select.editData option {
+    background-color: hsl(0, 0%, 16%);
+    color: white;
+}
+
+table input:hover, table select:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: background-color 0.2s ease;
+}
+
+/* table columns sizes */
+/* table for exams*/
+#examDatesTable th:nth-child(1) {
+    width: 40%;
+}
+
+#examDatesTable th:nth-child(2) {
+    width: 30%;
+}
+
+#examDatesTable th:nth-child(3) {
+    width: 10%;
+    white-space: nowrap;
+}
+
+#examDatesTable th:nth-child(4) {
+    width: 10%;
+    white-space: nowrap;
+}
+
+#examDatesTable th:nth-child(5) {
+    width: 5%;
+}
+
+#examDatesTable th:nth-child(6) {
+    width: 5%
+}
+
+
+/* table for applicants */
+#applicantsTable th:nth-child(1) {
+    width: 15%;
+}
+
+#applicantsTable th:nth-child(2) {
+    width: 15%;
+}
+
+#applicantsTable th:nth-child(3) {
+    width: 20%;
+    white-space: nowrap;
+}
+
+#applicantsTable th:nth-child(4) {
+    width: 15%;
+    white-space: nowrap;
+}
+
+#applicantsTable th:nth-child(5) {
+    width: 20%;
+    white-space: nowrap;
+}
+
+#applicantsTable th:nth-child(6) {
+    width: 10%;
+}
+
+#applicantsTable th:nth-child(6) {
+    width: 5%;
+}
+ /* edit and delete buttons */
+
+ .deleteButton, .editButton{
+    display: block;
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 10%;
+    height: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.2s ease;
+    background-color: transparent;
+ }
+ .deleteButton {
+    border-color: #E31E24;
+    color: #E31E24;
+ }
+
+ .editButton {
+    border-color: #1D3580;
+    color: #1D3580;
+ }
+
+.deleteButton:disabled, .editButton:disabled{
+    opacity: 0.5 !important;
+    color: rgba(255, 255, 255, 0.3) !important;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+ #adminButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+ }
+
+ .deleteButton:hover, .editButton:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 1.5rem rgba(255, 255, 255, 0.1);
+ } 

@@ -1,0 +1,104 @@
+.reportTable {
+    width: 55%;
+    margin: 3rem auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.reportTable th {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: ivory;
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+}
+
+.reportTable th:nth-child(n+1):not(:last-child) {
+    border-right: 3px solid rgba(255, 255, 255, 0.15);
+}
+
+.reportTable td {
+    padding: 0.5rem;
+    color: ivory;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.05);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.reportTable td:nth-child(n+1):not(:last-child) {
+    border-right: 3px solid rgba(255, 255, 255, 0.15);
+}
+
+.reportTable td:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: background-color 0.2s ease;
+}
+
+#majorTable th:nth-child(1) {
+    width: 80%;
+}
+
+#majorTable th:nth-child(2) {
+    width: 20%;
+}
+
+#majorTable td:nth-child(2) {
+    text-align: center;
+}
+
+.reportForm Form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.reportSelect {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    width: 40%;
+    padding: 10px;
+
+    text-align: left;
+    font-size:x-large;
+    color: ivory;
+
+    outline: none;
+    background-color: hsl(0, 0%, 26%);;
+    border-style: none;
+    border-radius: 20px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+.reportSubmit {
+    display: inline-block;
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 20px;
+    width: auto;
+    padding: 0 1.5rem;
+    height: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.2s ease;
+    background-color: #1D3580;
+    border-color: #E31E24;
+    color: ivory;
+}
+
+.reportSubmit:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 1.5rem rgba(255, 255, 255, 0.1);
+}
